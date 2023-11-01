@@ -5,6 +5,7 @@ import app from "./../../Shared/firebaseConfig";
 import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage";
 import Loader from "../Loader";
 import { useRouter } from "next/router";
+import { useSession } from "next-auth/react";
 
 export default function Form() {
   const [inputs, setInputs] = useState({});
@@ -15,6 +16,7 @@ export default function Form() {
   const [docId, setDocId] = useState(Date.now().toString());
 
   const db = getFirestore(app);
+  const { data: session } = useSession();
   const router = useRouter();
   const storage = getStorage(app);
   const handleChange = (e) => {
@@ -25,6 +27,27 @@ export default function Form() {
       [name]: value
     }));
   };
+
+  useEffect(() => {
+    if (session) {
+      setInputs((values) => ({
+        ...values,
+        userName: session.user?.name
+      }));
+      setInputs((values) => ({
+        ...values,
+        userImage: session.user?.image
+      }));
+      setInputs((values) => ({
+        ...values,
+        email: session.user?.email
+      }));
+      setInputs((values) => ({
+        ...values,
+        id: docId
+      }));
+    }
+  }, [session]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   swcMinify: true,
 
   images: {
@@ -10,7 +10,8 @@ const nextConfig = {
       "images.unsplash.com",
       "plus.unsplash.com",
       "avatars.githubusercontent.com",
-      "lh3.googleusercontent.com"
+      "lh3.googleusercontent.com",
+      "firebasestorage.googleapis.com"
     ]
   }
 };
