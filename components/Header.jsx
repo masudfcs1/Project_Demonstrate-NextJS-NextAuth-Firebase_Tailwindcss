@@ -29,7 +29,9 @@ export default function Header() {
           <span className=" hidden sm:block ">CREATE POST </span>
           <HiOutlinePencilSquare className=" sm:hidden" />
         </button>
-        <button className=" px-3 p-2  bg-gray-600 text-white gap-2 rounded-full">
+
+        <button className=" px-3 p-2  bg-gray-400 text-white gap-2 rounded-full">
+          <HiOutlineArrowLeftOnRectangle className=" sm:hidden" />
           {!session ? (
             <span className=" hidden sm:block" onClick={() => signIn()}>
               Sign In
@@ -42,7 +44,6 @@ export default function Header() {
               Sign Out
             </span>
           )}
-          <HiOutlineArrowLeftOnRectangle className=" sm:hidden" />
         </button>
 
         {session ? (

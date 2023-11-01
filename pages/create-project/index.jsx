@@ -1,5 +1,10 @@
+import Form from "@/components/CreateProject/Form";
 import React from "react";
 
 export default function CreateProject() {
-  return <div>CreatePost</div>;
+  return (
+    <div>
+      <Form />
+    </div>
+  );
 }
