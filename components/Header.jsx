@@ -53,6 +53,7 @@ export default function Header() {
             height={40}
             alt="img"
             className="  rounded-full cursor-pointer"
+            onClick={() => router.push("/profile")}
           />
         ) : null}
       </div>

@@ -1,10 +1,22 @@
 import Data from "@/Data";
 import React, { useEffect, useState } from "react";
+import { getFirestore, setDoc, doc } from "firebase/firestore";
+import app from "./../../Shared/firebaseConfig";
+import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage";
+import Loader from "../Loader";
+import { useRouter } from "next/router";
 
 export default function Form() {
   const [inputs, setInputs] = useState({});
   const [techList, setTechList] = useState([]);
+  const [file, setFile] = useState([]);
+  const [loader, setLoader] = useState(false);
+  const [submit, setSubmit] = useState(false);
+  const [docId, setDocId] = useState(Date.now().toString());
 
+  const db = getFirestore(app);
+  const router = useRouter();
+  const storage = getStorage(app);
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -14,9 +26,39 @@ export default function Form() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(inputs);
+    setLoader(true);
+
+    const storageRef = ref(storage, "show-projects/" + file?.name);
+
+    uploadBytes(storageRef, file)
+      .then((snapshot) => {
+        console.log("Uploaded a blob or file!");
+      })
+      .then((resp) => {
+        getDownloadURL(storageRef).then((url) => {
+          setInputs((values) => ({
+            ...values,
+            image: url
+          }));
+          setSubmit(true);
+        });
+      });
+    // console.log(inputs);
+    // await setDoc(doc(db, "Projects", Date.now().toString()), inputs);
+  };
+
+  useEffect(() => {
+    if (submit == true) {
+      saveDoc();
+    }
+  }, [submit]);
+
+  const saveDoc = async () => {
+    await setDoc(doc(db, "Projects", docId), inputs);
+    setLoader(false);
+    router.push("/profile");
   };
 
   const onTechSelect = (name, isChecked) => {
@@ -41,6 +83,11 @@ export default function Form() {
       className="flex justify-center mt-10
   shadow-md mx-4 md:mx-56 lg:mx-72 p-5 rounded-md"
     >
+      {loader ? (
+        <div className="absolute">
+          <Loader />
+        </div>
+      ) : null}
       {/* onSubmit={handleSubmit} */}
       <form onSubmit={handleSubmit}>
         <h2
@@ -120,7 +167,7 @@ export default function Form() {
         />
         <input
           type="file"
-          //onChange={(e) => setFile(e.target.files[0])}
+          onChange={(e) => setFile(e.target.files[0])}
           accept="image/gif, image/jpeg, image/png"
           className="mb-5 border-[1px] w-full outline-teal-400"
         />
