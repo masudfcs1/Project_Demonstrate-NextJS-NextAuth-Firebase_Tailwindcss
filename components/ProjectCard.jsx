@@ -19,7 +19,7 @@ export default function ProjectCard({ project }) {
       />
       <p
         className="text-[13px] mt-2 
-        line-clamp-2"
+        line-clamp-2 font-semibold  "
       >
         {project.title}
       </p>
