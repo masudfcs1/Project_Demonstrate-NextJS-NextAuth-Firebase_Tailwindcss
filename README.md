@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Project-Demonstrate_NextJS_NextAuth_Firebase_Tailwindcss
 
 First, run the development server:
 
@@ -11,6 +11,15 @@ yarn dev
 # or
 pnpm dev
 ```
+
+![image](https://github.com/masudfcs1/Project-Demonstrate_NextJS_NextAuth_Firebase_Tailwindcss/assets/57311382/a11b5d24-6ca8-421d-8654-2e5b64801539)
+![image](https://github.com/masudfcs1/Project-Demonstrate_NextJS_NextAuth_Firebase_Tailwindcss/assets/57311382/6a2f5511-6c66-4cba-95ce-cbacc931015a)
+![image](https://github.com/masudfcs1/Project-Demonstrate_NextJS_NextAuth_Firebase_Tailwindcss/assets/57311382/d2e9ce0e-252e-485c-944e-7006847a02d8)
+![image](https://github.com/masudfcs1/Project-Demonstrate_NextJS_NextAuth_Firebase_Tailwindcss/assets/57311382/c4226347-e576-4ec2-aac3-b54611e5554d)
+
+![image](https://github.com/masudfcs1/Project-Demonstrate_NextJS_NextAuth_Firebase_Tailwindcss/assets/57311382/e5799b04-0d1e-4ff7-a34f-59e17be94908)
+![image](https://github.com/masudfcs1/Project-Demonstrate_NextJS_NextAuth_Firebase_Tailwindcss/assets/57311382/e93b493a-bfa5-4f66-a0d4-66f85df0e07f)
+![image](https://github.com/masudfcs1/Project-Demonstrate_NextJS_NextAuth_Firebase_Tailwindcss/assets/57311382/257316b3-1f49-4356-8fe6-4c713876be9d)
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -36,4 +45,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
 # Project-Demonstrate_NextJS_Firebase_Tailwindcss

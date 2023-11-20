@@ -17,9 +17,9 @@ export default function Header() {
   console.log(session);
   const router = useRouter();
   return (
-    <div className=" flex justify-between p-2 border-b-[1px] shadow-lg border-blue-200 ">
+    <div className="flex justify-between p-1 pl-6 pr-6  border-b-[1px] shadow-lg border-blue-200 ">
       <Link href="/">
-        <img src="/logo.png" alt="img" className=" w-10" />
+        <img src="/logo.png" alt="img" className=" w-12" />
       </Link>
       <div className=" flex gap-5">
         <button

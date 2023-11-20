@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import "@/styles/globals.css";
 import { SessionProvider } from "next-auth/react";
@@ -9,7 +10,7 @@ export default function App({
   return (
     <SessionProvider session={session}>
       <Header />
-      <Component {...pageProps} />{" "}
+      <Component {...pageProps} /> {/* <Footer /> */}{" "}
     </SessionProvider>
   );
 }
