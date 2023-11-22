@@ -6,7 +6,7 @@ const Technology = [
   },
   {
     id: 2,
-    name: "React Native"
+    name: "Node JS"
   },
   {
     id: 3,
@@ -14,7 +14,7 @@ const Technology = [
   },
   {
     id: 4,
-    name: "Angular"
+    name: "Express JS"
   },
   {
     id: 5,
@@ -26,15 +26,15 @@ const Technology = [
   },
   {
     id: 7,
-    name: "Expo"
+    name: "Sass"
   },
   {
     id: 8,
-    name: "Python"
+    name: "Typescript"
   },
   {
     id: 9,
-    name: "Other"
+    name: "Crypto API"
   }
 ];
 

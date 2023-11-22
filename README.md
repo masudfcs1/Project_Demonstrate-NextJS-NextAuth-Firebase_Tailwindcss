@@ -2,8 +2,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Project-Demonstrate_NextJS_NextAuth_Firebase_Tailwindcss
 
-First, run the development server:
-
 ```bash
 npm run dev
 # or
