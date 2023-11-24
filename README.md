@@ -4,11 +4,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
+# [Live Demo](https://projectsdemonstrate.vercel.app/)
+
+Live Demo->https://projectsdemonstrate.vercel.app/
+
+React_Education WebApplication
+- NextJS
+- Tailwind-css
+- NextAuth
+- Firebase
 
 ![image](https://github.com/masudfcs1/Project-Demonstrate_NextJS_NextAuth_Firebase_Tailwindcss/assets/57311382/a11b5d24-6ca8-421d-8654-2e5b64801539)
 ![image](https://github.com/masudfcs1/Project-Demonstrate_NextJS_NextAuth_Firebase_Tailwindcss/assets/57311382/6a2f5511-6c66-4cba-95ce-cbacc931015a)
