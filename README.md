@@ -14,6 +14,8 @@ React_Education WebApplication
 - Tailwind-css
 - NextAuth
 - Firebase
+  
+![Group 8](https://github.com/masudfcs1/Project_Demonstrate-NextJS-NextAuth-Firebase_Tailwindcss/assets/57311382/336a41aa-a47e-4212-838a-ef4c316563b9)
 
 ![image](https://github.com/masudfcs1/Project-Demonstrate_NextJS_NextAuth_Firebase_Tailwindcss/assets/57311382/a11b5d24-6ca8-421d-8654-2e5b64801539)
 ![image](https://github.com/masudfcs1/Project-Demonstrate_NextJS_NextAuth_Firebase_Tailwindcss/assets/57311382/6a2f5511-6c66-4cba-95ce-cbacc931015a)
